@@ -28,7 +28,7 @@ for (var i = 0; i < cart.length; i++) {
   if (cart.length !== 1 && i == cart.length -1){
     cartList += " and"
   }
-  cartList += `${cart[i].itemName} at $${cart[i].itemPrice}`
+  cartList += ` ${cart[i].itemName} at $${cart[i].itemPrice}`
   if( i == cart.length -1) {
     cartList += "."
   }
