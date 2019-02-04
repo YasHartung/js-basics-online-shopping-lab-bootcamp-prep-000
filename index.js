@@ -20,6 +20,9 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  if (cart.length == 0) {
+    return "Your shopping cart is empty."
+  }
 var cartList = "In your cart, you have"
 for (var i = 0; i < cart.length; i++) {
   if (cart.length !== 1 && i == cart.length -1){
