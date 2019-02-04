@@ -20,7 +20,20 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+var cartList = "In your cart, you have"
+for (var i = 0; i < cart.length; i++) {
+  if (cart.length !== 1 && i == cart.length -1){
+    cartList += " and"
+  }
+  cartList += `${cart[i].itemName} at $${cart[i].itemPrice}`
+  if( i == cart.length -1) {
+    cartList += "."
+  }
+  else {
+    cartList += ","
+  }
+}
+return cartList;
 }
 
 function total() {
